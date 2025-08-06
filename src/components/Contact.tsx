@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { contactContent } from "@/const/data/contactContent";
+import { GoogleRating } from "@/components/GoogleRating";
+import { SocialMediaLinks } from "@/components/SocialMedia";
 
 const Contact = () => {
   const { id, title, subtitle, introTitle, introText, contactInfo } =
@@ -26,127 +28,77 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
-            {/* Contact Information */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            {/* Left Column - Get in Touch + Contact Cards */}
             <div className="space-y-8">
-              <div>
-                <h3 className="font-serif text-2xl font-semibold text-primary mb-6">
-                  {introTitle}
-                </h3>
-                <p className="text-muted-foreground mb-8 leading-relaxed">
-                  {introText}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {contactInfo.map((info, index) => (
-                  <Card
-                    key={index}
-                    className="shadow-warm animate-fade-in"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="flex-shrink-0">
-                          <info.icon className="h-6 w-6 text-accent" />
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-primary mb-2">
-                            {info.title}
-                          </h4>
-                          {info.details.map((detail, i) => (
-                            <p
-                              key={i}
-                              className="text-muted-foreground text-sm"
-                            >
-                              {detail}
-                            </p>
-                          ))}
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-
-              {/* Optional Reservation CTA */}
-              {/* <Card className="shadow-warm bg-gradient-hero text-cream">
-                <CardContent className="p-6">
-                  <h4 className="font-serif text-xl font-semibold mb-3">
-                    Reserve Your Table
-                  </h4>
-                  <p className="text-sm opacity-90 mb-4">
-                    Call us at (555) 123-4567 or book online through our reservation system.
-                  </p>
-                  <Button className="bg-golden text-primary hover:bg-golden/90">
-                    Book Online
-                  </Button>
-                </CardContent>
-              </Card> */}
-            </div>
-
-            {/* Optional Contact Form */}
-            {/* <div className="animate-scale-in">
-              <Card className="shadow-warm">
+              <Card className="shadow-warm animate-fade-in">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    Send us a Message
+                    {introTitle}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
-                          First Name
-                        </label>
-                        <Input id="firstName" type="text" required className="w-full" />
-                      </div>
-                      <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
-                          Last Name
-                        </label>
-                        <Input id="lastName" type="text" required className="w-full" />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email
-                      </label>
-                      <Input id="email" type="email" required className="w-full" />
-                    </div>
-
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                        Phone (Optional)
-                      </label>
-                      <Input id="phone" type="tel" className="w-full" />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                        Message
-                      </label>
-                      <Textarea
-                        id="message"
-                        rows={4}
-                        required
-                        className="w-full resize-none"
-                        placeholder="Tell us about your reservation needs or any questions you have..."
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      className="w-full bg-gradient-accent text-primary hover:opacity-90"
-                    >
-                      Send Message
-                    </Button>
-                  </form>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {introText}
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {contactInfo.map((info, index) => (
+                      <Card
+                        key={index}
+                        className="shadow-md animate-fade-in"
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        <CardContent className="p-4">
+                          <div className="flex items-start space-x-4">
+                            <info.icon className="h-6 w-6 text-accent" />
+                            <div>
+                              <h4 className="font-semibold text-primary mb-2">
+                                {info.title}
+                              </h4>
+                              {info.details.map((detail, i) => (
+                                <p
+                                  key={i}
+                                  className="text-muted-foreground text-sm"
+                                >
+                                  {detail}
+                                </p>
+                              ))}
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
-            </div> */}
+            </div>
+
+            {/* Right Column - Rate Your Experience (same height, wrapped in Card) */}
+            <div className="space-y-8 h-full flex flex-col">
+              <Card className="shadow-warm h-full flex flex-col animate-fade-in">
+                <CardHeader>
+                  <CardTitle className="font-serif text-2xl text-primary">
+                    Rate Your Experience
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex-1 flex items-center justify-center">
+                  <GoogleRating />
+                </CardContent>
+              </Card>
+
+              {/* Optional: Add Social Links inside a card */}
+              {/* <Card className="shadow-warm animate-fade-in">
+                <CardContent className="p-6 text-center">
+                  <h4 className="font-semibold text-primary mb-4">
+                    Connect With Us
+                  </h4>
+                  <SocialMediaLinks />
+                  <p className="text-sm text-muted-foreground mt-3">
+                    Follow us for daily specials and behind-the-scenes moments
+                  </p>
+                </CardContent>
+              </Card> */}
+            </div>
           </div>
         </div>
       </div>

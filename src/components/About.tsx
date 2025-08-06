@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { aboutContent } from "@/const/data/aboutContent";
+import { ReviewPrompt } from "@/components/GoogleRating";
 
 const About = () => {
   const { id, title, subtitle, storyTitle, storyParagraphs, quote, features } =
@@ -65,6 +66,11 @@ const About = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Review Prompt */}
+          <div className="mt-16 animate-fade-in">
+            <ReviewPrompt />
           </div>
         </div>
       </div>

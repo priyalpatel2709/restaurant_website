@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ColorPaletteEditor } from "@/components/ColorPaletteEditor";
 import { ColorExamples } from "./components/ColorExamples";
+import { FloatingRatingButton } from "@/components/GoogleRating";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
         </BrowserRouter>
         {/* <ColorPaletteEditor /> */}
         {/* <ColorExamples /> */}
+        <FloatingRatingButton />
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>

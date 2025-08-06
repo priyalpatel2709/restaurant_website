@@ -5,6 +5,7 @@ import Menu from "@/components/Menu";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { SocialMediaSection } from "@/components/SocialMedia";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Menu />
       <About />
       <Contact />
+      <SocialMediaSection />
       <Footer />
     </div>
   );

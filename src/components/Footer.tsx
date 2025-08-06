@@ -1,5 +1,6 @@
 import { footerContent } from "@/const/data/footerContent";
 import { Heart } from "lucide-react";
+import { SocialMediaLinks } from "@/components/SocialMedia";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -58,8 +59,16 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Footer */}
+        {/* Social Media Links */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <span className="text-sm opacity-90">Follow us:</span>
+            <SocialMediaLinks />
+          </div>
+        </div>
+
+        {/* Bottom Footer */}
+        <div className="border-t border-white/20 mt-4 pt-4 text-center">
           <p className="text-sm opacity-90 flex items-center justify-center gap-2">
             {madeWith.split("❤️")[0]}
             <Heart className="h-4 w-4 text-red-400" />
