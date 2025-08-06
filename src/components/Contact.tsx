@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-10">
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
@@ -91,7 +91,7 @@ const Contact = () => {
                 ))}
               </div>
 
-              <Card className="shadow-warm bg-gradient-hero text-cream">
+              {/* <Card className="shadow-warm bg-gradient-hero text-cream">
                 <CardContent className="p-6">
                   <h4 className="font-serif text-xl font-semibold mb-3">
                     Reserve Your Table
@@ -103,11 +103,11 @@ const Contact = () => {
                     Book Online
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
 
             {/* Contact Form */}
-            <div className="animate-scale-in">
+            {/* <div className="animate-scale-in">
               <Card className="shadow-warm">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
@@ -186,7 +186,7 @@ const Contact = () => {
                   </form>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
