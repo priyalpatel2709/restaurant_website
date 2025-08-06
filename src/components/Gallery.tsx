@@ -2,50 +2,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-
-import pastaImage from "@/assets/pasta-dish.jpg";
-import pizzaImage from "@/assets/pizza-special.jpg";
-import diningImage from "@/assets/dining-setup.jpg";
-import dessertImage from "@/assets/dessert-tiramisu.jpg";
+import { galleryContent } from "@/const/data/galleryContent";
 
 const Gallery = () => {
-  const images = [
-    {
-      src: pastaImage,
-      alt: "Fresh Pasta with Basil",
-      title: "Homemade Pasta",
-      description: "Fresh pasta made daily with traditional Italian recipes",
-    },
-    {
-      src: pizzaImage,
-      alt: "Wood-fired Pizza",
-      title: "Authentic Pizza",
-      description: "Wood-fired pizza with the finest Italian ingredients",
-    },
-    {
-      src: diningImage,
-      alt: "Elegant Dining Setup",
-      title: "Fine Dining",
-      description: "Elegant atmosphere for memorable dining experiences",
-    },
-    {
-      src: dessertImage,
-      alt: "Tiramisu Dessert",
-      title: "Traditional Desserts",
-      description: "Classic Italian desserts made with authentic recipes",
-    },
-  ];
+  const { title, subtitle, images } = galleryContent;
 
   return (
     <section id="gallery" className="py-10 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
-            Our Culinary Journey
+            {title}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover the artistry behind every dish, from fresh ingredients to
-            beautiful presentation
+            {subtitle}
           </p>
         </div>
 
