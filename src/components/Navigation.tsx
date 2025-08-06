@@ -7,7 +7,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "Menu", href: "#menu" },
+    // { name: "Menu", href: "#menu" },
     { name: "Gallery", href: "#gallery" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
@@ -48,11 +48,11 @@ const Navigation = () => {
           </div>
 
           {/* Reservation Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button className="bg-gradient-accent text-primary hover:opacity-90">
               Reserve Table
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -84,11 +84,11 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <div className="pt-2">
+            {/* <div className="pt-2">
               <Button className="bg-gradient-accent text-primary hover:opacity-90 w-full">
                 Reserve Table
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
