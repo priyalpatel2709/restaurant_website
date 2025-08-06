@@ -42,8 +42,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   // Initialize theme from localStorage or system preference
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const initialTheme = savedTheme || systemTheme;
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'light';
+    // const initialTheme = savedTheme || systemTheme;
+    const initialTheme = 'light';
     setTheme(initialTheme);
   }, []);
 
@@ -80,9 +81,9 @@ export function ThemeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      onClick={() => setTheme(theme === 'light' ? 'light' : 'light')}
       className="p-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors"
-      aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+      aria-label={`Switch to ${theme === 'light' ? 'light' : 'light'} mode`}
     >
       {theme === 'light' ? (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

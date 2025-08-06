@@ -8,49 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 30% 98%;
-    --foreground: 20 25% 15%;
+    --background: 0 0% 100%;
+    --foreground: 120 85% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 20 25% 15%;
+    --card-foreground: 120 85% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 25% 15%;
+    --popover-foreground: 120 85% 20%;
 
-    --primary: 15 85% 35%;
-    --primary-foreground: 45 30% 98%;
+    --primary: 120 85% 20%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 25% 92%;
-    --secondary-foreground: 20 25% 15%;
+    --secondary: 120 30% 95%;
+    --secondary-foreground: 120 85% 20%;
 
-    --muted: 45 20% 90%;
-    --muted-foreground: 20 15% 45%;
+    --muted: 120 20% 92%;
+    --muted-foreground: 120 15% 45%;
 
-    --accent: 25 95% 55%;
-    --accent-foreground: 20 25% 15%;
+    --accent: 120 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 20% 85%;
-    --input: 45 20% 85%;
-    --ring: 15 85% 35%;
+    --border: 120 20% 85%;
+    --input: 120 20% 85%;
+    --ring: 120 85% 20%;
 
-    /* Restaurant-specific design tokens - Indian restaurant colors */
-    --warm-brown: 15 75% 30%;
-    --golden: 25 95% 55%;
-    --cream: 45 30% 98%;
-    --deep-brown: 15 85% 25%;
-    --light-gold: 35 80% 75%;
+    /* Restaurant-specific design tokens - Vatika Inn logo colors */
+    --warm-brown: 120 85% 20%;
+    --golden: 120 85% 50%;
+    --cream: 0 0% 100%;
+    --deep-brown: 120 85% 15%;
+    --light-gold: 120 60% 80%;
     
-    /* Gradients - Indian restaurant inspired */
-    --gradient-hero: linear-gradient(135deg, hsl(15 75% 30%), hsl(15 85% 25%));
-    --gradient-accent: linear-gradient(90deg, hsl(25 95% 55%), hsl(35 85% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(45 30% 99%), hsl(45 25% 96%));
+    /* Logo petal colors */
+    --logo-orange: 25 95% 55%;
+    --logo-pink: 330 85% 65%;
+    --logo-blue: 200 85% 65%;
+    --logo-green: 120 85% 50%;
+    --logo-purple: 270 85% 55%;
+    --logo-red-orange: 15 95% 55%;
+    
+    /* Gradients - Vatika Inn logo inspired */
+    --gradient-hero: linear-gradient(135deg, hsl(120 85% 20%), hsl(120 85% 15%));
+    --gradient-accent: linear-gradient(90deg, hsl(120 85% 50%), hsl(120 75% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(120 20% 98%));
+    --gradient-logo: linear-gradient(135deg, hsl(25 95% 55%), hsl(330 85% 65%), hsl(200 85% 65%), hsl(120 85% 50%), hsl(270 85% 55%), hsl(15 95% 55%));
     
     /* Shadows */
-    --shadow-warm: 0 10px 30px -10px hsl(15 75% 30% / 0.25);
-    --shadow-golden: 0 5px 20px -5px hsl(25 95% 55% / 0.35);
+    --shadow-warm: 0 10px 30px -10px hsl(120 85% 20% / 0.25);
+    --shadow-golden: 0 5px 20px -5px hsl(120 85% 50% / 0.35);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,40 +85,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 15 25% 8%;
-    --foreground: 45 30% 95%;
+    --background: 120 25% 8%;
+    --foreground: 120 60% 95%;
 
-    --card: 15 30% 12%;
-    --card-foreground: 45 30% 95%;
+    --card: 120 30% 12%;
+    --card-foreground: 120 60% 95%;
 
-    --popover: 15 30% 12%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 120 30% 12%;
+    --popover-foreground: 120 60% 95%;
 
-    --primary: 25 85% 65%;
-    --primary-foreground: 15 25% 8%;
+    --primary: 120 85% 60%;
+    --primary-foreground: 120 25% 8%;
 
-    --secondary: 15 25% 18%;
-    --secondary-foreground: 45 30% 95%;
+    --secondary: 120 25% 18%;
+    --secondary-foreground: 120 60% 95%;
 
-    --muted: 15 25% 18%;
-    --muted-foreground: 45 20% 65%;
+    --muted: 120 25% 18%;
+    --muted-foreground: 120 20% 65%;
 
-    --accent: 25 95% 55%;
-    --accent-foreground: 15 25% 8%;
+    --accent: 120 85% 50%;
+    --accent-foreground: 120 25% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 45 30% 95%;
+    --destructive-foreground: 120 60% 95%;
 
-    --border: 15 25% 18%;
-    --input: 15 25% 18%;
-    --ring: 25 85% 65%;
+    --border: 120 25% 18%;
+    --input: 120 25% 18%;
+    --ring: 120 85% 60%;
     
     /* Dark mode restaurant tokens */
-    --warm-brown: 15 65% 45%;
-    --golden: 25 95% 55%;
-    --cream: 15 25% 8%;
-    --deep-brown: 15 75% 35%;
-    --light-gold: 25 55% 25%;
+    --warm-brown: 120 65% 45%;
+    --golden: 120 85% 50%;
+    --cream: 120 25% 8%;
+    --deep-brown: 120 75% 35%;
+    --light-gold: 120 55% 25%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

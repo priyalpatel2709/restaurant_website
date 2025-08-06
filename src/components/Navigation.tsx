@@ -54,9 +54,9 @@ const Navigation = () => {
           </div>
 
           {/* Theme Toggle */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <ThemeToggle />
-          </div>
+          </div> */}
 
           {/* Mobile menu button and theme toggle */}
           <div className="md:hidden flex items-center gap-2">
