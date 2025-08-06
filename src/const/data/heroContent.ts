@@ -13,10 +13,10 @@ export const heroContent = {
       href: "#menu",
       variant: "primary",
     },
-    {
-      label: "Reserve Table",
-      href: "#contact",
-      variant: "outline",
-    },
+    // {
+    //   label: "Reserve Table",
+    //   href: "#contact",
+    //   variant: "outline",
+    // },
   ],
 };

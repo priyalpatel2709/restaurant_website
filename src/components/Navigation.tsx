@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeProvider";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +48,11 @@ const Navigation = () => {
             </div>
           </div>
 
+          {/* Theme Toggle */}
+          {/* <div className="hidden md:block">
+            <ThemeToggle />
+          </div> */}
+
           {/* Reservation Button */}
           {/* <div className="hidden md:block">
             <Button className="bg-gradient-accent text-primary hover:opacity-90">
@@ -54,8 +60,9 @@ const Navigation = () => {
             </Button>
           </div> */}
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button and theme toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"
