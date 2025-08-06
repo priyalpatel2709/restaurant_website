@@ -58,6 +58,13 @@ export default {
 				'cream': 'hsl(var(--cream))',
 				'deep-brown': 'hsl(var(--deep-brown))',
 				'light-gold': 'hsl(var(--light-gold))',
+				// Logo petal colors
+				'logo-orange': 'hsl(var(--logo-orange))',
+				'logo-pink': 'hsl(var(--logo-pink))',
+				'logo-blue': 'hsl(var(--logo-blue))',
+				'logo-green': 'hsl(var(--logo-green))',
+				'logo-purple': 'hsl(var(--logo-purple))',
+				'logo-red-orange': 'hsl(var(--logo-red-orange))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -132,7 +139,8 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-logo': 'var(--gradient-logo)'
 			},
 			boxShadow: {
 				'warm': 'var(--shadow-warm)',

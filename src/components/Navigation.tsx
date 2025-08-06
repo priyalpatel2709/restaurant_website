@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeProvider";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,9 +30,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-serif font-bold text-primary">
-              Bella Vista
-            </h1>
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="Vatika Inn" className="h-10 w-auto" />
+              <h1 className="text-2xl font-serif font-bold text-primary">
+                Vatika Inn
+              </h1>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -50,16 +54,9 @@ const Navigation = () => {
           </div>
 
           {/* Theme Toggle */}
-          {/* <div className="hidden md:block">
+          <div className="hidden md:block">
             <ThemeToggle />
-          </div> */}
-
-          {/* Reservation Button */}
-          {/* <div className="hidden md:block">
-            <Button className="bg-gradient-accent text-primary hover:opacity-90">
-              Reserve Table
-            </Button>
-          </div> */}
+          </div>
 
           {/* Mobile menu button and theme toggle */}
           <div className="md:hidden flex items-center gap-2">
@@ -92,11 +89,6 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            {/* <div className="pt-2">
-              <Button className="bg-gradient-accent text-primary hover:opacity-90 w-full">
-                Reserve Table
-              </Button>
-            </div> */}
           </div>
         </div>
       )}

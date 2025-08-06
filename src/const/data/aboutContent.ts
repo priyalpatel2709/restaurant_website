@@ -2,43 +2,43 @@ import { Heart, Award, Users, Clock } from "lucide-react";
 
 export const aboutContent = {
   id: "about",
-  title: "About Bella Vista",
+  title: "About Vatika Inn",
   subtitle:
-    "For over three generations, the Rossi family has been dedicated to bringing authentic Italian flavors and hospitality to our community.",
+    "Serving authentic Kathiyawadi, Punjabi, and Chinese cuisine in Vadodara with love and tradition.",
   storyTitle: "Our Story",
   storyParagraphs: [
-    `Bella Vista was founded in 1952 by Nonna Maria Rossi, who brought her family's treasured recipes from the hills of Tuscany to create a warm, welcoming space where food brings people together.`,
-    `Today, her grandson Chef Antonio continues the tradition, sourcing the finest ingredients from Italy and local farms to create dishes that honor our heritage while embracing modern culinary techniques.`,
-    `Our restaurant is more than just a place to dine - it's a celebration of Italian culture, family values, and the joy of sharing exceptional food with the people you love.`,
+    `Vatika Inn was founded with a simple mission: to bring authentic regional flavors to Vadodara. We started as a small family kitchen, sharing our treasured recipes from Kathiyawad, Punjab, and China.`,
+    `Today, we continue the tradition, sourcing the finest ingredients and using traditional cooking methods to create dishes that honor our heritage while satisfying modern taste buds.`,
+    `Our restaurant is more than just a place to dine - it's a celebration of diverse Indian and Chinese cultures, family values, and the joy of sharing exceptional food with the people you love.`,
   ],
   quote: {
-    text: `La cucina è il cuore della casa - The kitchen is the heart of the home. At Bella Vista, we extend our family table to welcome you into our home.`,
-    author: "Chef Antonio Rossi",
+    text: `Food is not just about taste, it's about tradition, family, and love. At Vatika Inn, we extend our family table to welcome you into our home.`,
+    author: "Vatika Inn Family",
   },
   features: [
     {
       icon: Heart,
-      title: "Passion for Authentic Cuisine",
+      title: "Authentic Regional Cuisine",
       description:
-        "Every dish is prepared with love and respect for traditional Italian recipes passed down through generations.",
+        "Every dish is prepared with love and respect for traditional Kathiyawadi, Punjabi, and Chinese recipes passed down through generations.",
     },
     {
       icon: Award,
-      title: "Award-Winning Excellence",
+      title: "Fresh Quality Ingredients",
       description:
-        "Recognized for outstanding food quality and service, maintaining the highest standards in Italian dining.",
+        "We use only the finest and freshest ingredients to ensure every meal meets our high standards of quality and taste.",
     },
     {
       icon: Users,
       title: "Family Owned & Operated",
       description:
-        "A family business dedicated to sharing the warmth and hospitality of Italian culture with every guest.",
+        "A family business dedicated to sharing the warmth and hospitality of Indian culture with every guest in Vadodara.",
     },
     {
       icon: Clock,
       title: "Fresh Daily Preparation",
       description:
-        "All pasta, sauces, and desserts are made fresh daily using only the finest imported and local ingredients.",
+        "All dishes are made fresh daily using traditional cooking methods and authentic spices for the perfect taste.",
     },
   ],
 };

@@ -3,20 +3,20 @@ import heroImage from "@/assets/restaurant-hero.jpg";
 export const heroContent = {
   id: "home",
   image: heroImage,
-  title: "Bella Vista",
-  subtitle: "Authentic Italian Cuisine",
+  title: "Vatika Inn",
+  subtitle: "The Family Restaurant",
   description:
-    "Experience the finest Italian dining with fresh ingredients, traditional recipes, and an elegant atmosphere that brings you the taste of Italy.",
+    "Authentic Kathiyawadi, Punjabi, and Chinese cuisine in Vadodara. Every dish is freshly prepared with love and high-quality ingredients.",
   buttons: [
     {
       label: "View Our Menu",
       href: "#menu",
       variant: "primary",
     },
-    // {
-    //   label: "Reserve Table",
-    //   href: "#contact",
-    //   variant: "outline",
-    // },
+    {
+      label: "Order Now",
+      href: "#contact",
+      variant: "outline",
+    },
   ],
 };

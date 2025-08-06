@@ -1,7 +1,7 @@
 export const footerContent = {
-  restaurantName: "Bella Vista",
+  restaurantName: "Vatika Inn",
   tagline:
-    "Authentic Italian cuisine in the heart of Little Italy. Experience the taste of tradition with every bite.",
+    "Authentic Kathiyawadi, Punjabi, and Chinese cuisine in Vadodara. Experience the taste of tradition with every bite.",
   quickLinks: [
     { label: "Menu", href: "#menu" },
     { label: "Gallery", href: "#gallery" },
@@ -9,10 +9,10 @@ export const footerContent = {
     { label: "Contact", href: "#contact" },
   ],
   contactInfo: {
-    address: ["123 Via Roma Street", "Little Italy, NY 10012"],
-    phone: "(555) 123-4567",
-    email: "info@bellavista.com",
+    address: ["Vatika Inn Restaurant", "Vadodara, Gujarat, India"],
+    phone: "+91 98765 43210",
+    email: "info@vatikainn.com",
   },
-  copyright: "Bella Vista Restaurant. All rights reserved.",
-  madeWith: "Made with ❤️ for authentic Italian cuisine",
+  copyright: "Vatika Inn Restaurant. All rights reserved.",
+  madeWith: "Made with ❤️ for authentic Indian cuisine",
 };

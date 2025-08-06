@@ -1,115 +1,130 @@
 export const menuContent = {
   title: "Our Menu",
   subtitle:
-    "Authentic Italian dishes prepared with the finest ingredients and traditional techniques.",
+    "Authentic Kathiyawadi, Punjabi, and Chinese dishes prepared with traditional recipes and fresh ingredients.",
   categories: [
     {
-      title: "Antipasti",
+      title: "Kathiyawadi Specials",
       items: [
         {
-          name: "Bruschetta Classica",
-          description: "Toasted bread with fresh tomatoes, basil, and garlic",
-          price: "$12",
+          name: "Undhiyu",
+          description: "Traditional Gujarati winter dish with mixed vegetables and spices",
+          price: "₹180",
         },
         {
-          name: "Antipasto Misto",
-          description:
-            "Selection of cured meats, cheeses, and marinated vegetables",
-          price: "$18",
+          name: "Khandvi",
+          description: "Soft gram flour rolls with mustard seeds and coconut",
+          price: "₹120",
         },
         {
-          name: "Burrata Caprese",
-          description: "Fresh burrata with tomatoes, basil, and balsamic glaze",
-          price: "$16",
+          name: "Dhokla",
+          description: "Steamed fermented rice and chickpea flour cake",
+          price: "₹100",
+        },
+        {
+          name: "Gujarati Kadhi",
+          description: "Yogurt-based curry with gram flour and spices",
+          price: "₹140",
         },
       ],
     },
     {
-      title: "Pasta",
+      title: "Punjabi Delights",
       items: [
         {
-          name: "Spaghetti Carbonara",
-          description:
-            "Traditional Roman pasta with eggs, pancetta, and Pecorino Romano",
-          price: "$22",
+          name: "Butter Chicken",
+          description: "Tender chicken in rich tomato and butter gravy",
+          price: "₹280",
         },
         {
-          name: "Penne Arrabbiata",
-          description:
-            "Spicy tomato sauce with garlic, red chilies, and fresh parsley",
-          price: "$19",
+          name: "Paneer Tikka",
+          description: "Grilled cottage cheese with aromatic spices",
+          price: "₹220",
         },
         {
-          name: "Fettuccine Alfredo",
-          description: "Fresh fettuccine in creamy Parmesan sauce",
-          price: "$21",
+          name: "Dal Makhani",
+          description: "Slow-cooked black lentils with cream and butter",
+          price: "₹160",
         },
         {
-          name: "Lasagna della Casa",
-          description:
-            "Traditional meat lasagna with rich Bolognese and béchamel",
-          price: "$25",
+          name: "Amritsari Fish",
+          description: "Crispy fish fritters with Punjabi spices",
+          price: "₹240",
         },
       ],
     },
     {
-      title: "Pizza",
+      title: "Chinese Favorites",
       items: [
         {
-          name: "Margherita",
-          description: "San Marzano tomatoes, fresh mozzarella, and basil",
-          price: "$18",
+          name: "Chilli Chicken",
+          description: "Spicy chicken with green chilies and soy sauce",
+          price: "₹260",
         },
         {
-          name: "Quattro Stagioni",
-          description:
-            "Four seasons pizza with artichokes, ham, mushrooms, and olives",
-          price: "$24",
+          name: "Veg Fried Rice",
+          description: "Stir-fried rice with fresh vegetables and soy sauce",
+          price: "₹140",
         },
         {
-          name: "Diavola",
-          description: "Spicy salami, tomatoes, mozzarella, and red peppers",
-          price: "$22",
+          name: "Manchurian",
+          description: "Vegetable dumplings in spicy gravy",
+          price: "₹180",
+        },
+        {
+          name: "Hakka Noodles",
+          description: "Stir-fried noodles with vegetables and sauces",
+          price: "₹160",
         },
       ],
     },
     {
-      title: "Secondi Piatti",
+      title: "Breads & Rice",
       items: [
         {
-          name: "Osso Buco Milanese",
-          description: "Braised veal shanks with saffron risotto",
-          price: "$35",
+          name: "Butter Naan",
+          description: "Soft leavened bread brushed with butter",
+          price: "₹30",
         },
         {
-          name: "Branzino in Crosta",
-          description: "Mediterranean sea bass baked in herb crust",
-          price: "$29",
+          name: "Roti",
+          description: "Whole wheat flatbread",
+          price: "₹20",
         },
         {
-          name: "Bistecca alla Fiorentina",
-          description: "Grilled T-bone steak with rosemary and olive oil",
-          price: "$45",
+          name: "Jeera Rice",
+          description: "Basmati rice with cumin seeds",
+          price: "₹120",
+        },
+        {
+          name: "Biryani",
+          description: "Aromatic rice with spices and vegetables",
+          price: "₹200",
         },
       ],
     },
     {
-      title: "Dolci",
+      title: "Desserts & Beverages",
       items: [
         {
-          name: "Tiramisu",
-          description: "Classic Italian dessert with mascarpone and coffee",
-          price: "$9",
+          name: "Gulab Jamun",
+          description: "Sweet milk dumplings in sugar syrup",
+          price: "₹80",
         },
         {
-          name: "Panna Cotta",
-          description: "Vanilla panna cotta with berry coulis",
-          price: "$8",
+          name: "Rasmalai",
+          description: "Soft cottage cheese patties in sweet milk",
+          price: "₹90",
         },
         {
-          name: "Cannoli Siciliani",
-          description: "Traditional Sicilian pastry with ricotta filling",
-          price: "$10",
+          name: "Masala Chai",
+          description: "Spiced Indian tea with milk",
+          price: "₹40",
+        },
+        {
+          name: "Lassi",
+          description: "Sweet yogurt-based drink",
+          price: "₹60",
         },
       ],
     },
