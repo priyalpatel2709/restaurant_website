@@ -32,7 +32,7 @@ const Hero = () => {
           and an elegant atmosphere that brings you the taste of Italy.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
           <Button 
             size="lg" 
             className="bg-gradient-accent text-primary hover:opacity-90 font-semibold px-8 py-3"
@@ -48,7 +48,7 @@ const Hero = () => {
           >
             Reserve Table
           </Button>
-        </div>
+        </div> */}
       </div>
 
       {/* Scroll Indicator */}
